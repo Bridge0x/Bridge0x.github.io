@@ -170,6 +170,15 @@ footer nav a:hover{color:var(--fg)}
 .edu .card p{font-size:.9rem;color:var(--muted);margin-top:4px}
 .prose p{max-width:66ch;font-size:1.05rem}
 .prose p+p{margin-top:16px}
+.shorts{display:grid;grid-template-columns:repeat(3,minmax(0,220px));gap:14px}
+@media (max-width:620px){.shorts{grid-template-columns:repeat(3,1fr);gap:10px}}
+.short .sthumb{position:relative;aspect-ratio:9/16;border-radius:14px;overflow:hidden;background:var(--bg2) center/cover no-repeat;border:1px solid var(--line);transition:transform .2s,box-shadow .2s}
+a.short:hover .sthumb{transform:translateY(-2px);box-shadow:0 14px 34px -22px var(--accent)}
+.short h3{font-size:.92rem;font-weight:600;line-height:1.35;margin-top:10px}
+.short p{font-size:.8rem;color:var(--muted)}
+@media (max-width:620px){.short h3{font-size:.8rem}}
+.videos.collapsed > a:nth-child(n+7){display:none}
+button.btn{font:inherit;font-size:.92rem;font-weight:500;color:var(--fg);cursor:pointer}
 .btn.icon{width:42px;height:42px;padding:0;justify-content:center}
 .btn.icon svg{width:18px;height:18px}
 .hero p.lead b{color:var(--fg);font-weight:600}
@@ -280,8 +289,12 @@ blockquote.q cite{display:block;margin-top:8px;font-family:Inter,sans-serif;font
           <div class="cta"><a class="btn primary" href="https://www.youtube.com/watch?v=R4RiCjTcXXs&amp;t=1486s"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.2 3.6z"/></svg>Watch the panel</a><a class="btn" href="https://www.agimeg.it/prediction-market-sigma-world-roma-regolamentazione/">Read on AGIMEG</a></div>
         </div>
       </div>
-      <div class="videos">
+      <div class="videos" id="vids">
 <a class="card video reveal" href="https://www.youtube.com/watch?v=R4RiCjTcXXs&amp;t=1486s"><div class="thumb" style="background-image:url(https://i.ytimg.com/vi/R4RiCjTcXXs/hqdefault.jpg)"><span class="play"></span></div><div class="meta"><h3>Prediction markets panel</h3><p>SiGMA World Rome 2026</p></div></a>
+<a class="card video reveal" href="https://www.youtube.com/watch?v=5IUzRpmFSmI&amp;t=559s"><div class="thumb" style="background-image:url(https://i.ytimg.com/vi/5IUzRpmFSmI/hqdefault.jpg)"><span class="play"></span></div><div class="meta"><h3>Tokenization: the value of blockchain for business</h3><p>We Make Future</p></div></a>
+<a class="card video reveal" href="https://www.youtube.com/watch?v=q8SUfyrZj-4&amp;t=955s"><div class="thumb" style="background-image:url(https://i.ytimg.com/vi/q8SUfyrZj-4/hqdefault.jpg)"><span class="play"></span></div><div class="meta"><h3>Digital Future of Real Assets: the RWA revolution</h3><p>DEXT Force Festival</p></div></a>
+<a class="card video reveal" href="https://www.youtube.com/watch?v=Rf00A5ouEdU&amp;t=121s"><div class="thumb" style="background-image:url(https://i.ytimg.com/vi/Rf00A5ouEdU/hqdefault.jpg)"><span class="play"></span></div><div class="meta"><h3>Tokenizing the Real World: unlocking value through blockchain</h3><p>ETH Cluj</p></div></a>
+<a class="card video reveal" href="https://www.youtube.com/watch?v=QaLoNpPEUCk&amp;t=16s"><div class="thumb" style="background-image:url(https://i.ytimg.com/vi/QaLoNpPEUCk/hqdefault.jpg)"><span class="play"></span></div><div class="meta"><h3>Bitcoin, stablecoins and more — fireside chat in Rome</h3><p>CryptoMondays</p></div></a>
 <a class="card video reveal" href="https://www.youtube.com/watch?v=YYg24vGc9XA"><div class="thumb" style="background-image:url(https://i.ytimg.com/vi/YYg24vGc9XA/hqdefault.jpg)"><span class="play"></span></div><div class="meta"><h3>TokNox — Algorand Ecosystem Showcase</h3><p>Decipher 2024</p></div></a>
 <a class="card video reveal" href="https://www.youtube.com/watch?v=5rpkBNG--wk"><div class="thumb" style="background-image:url(https://i.ytimg.com/vi/5rpkBNG--wk/hqdefault.jpg)"><span class="play"></span></div><div class="meta"><h3>TokNox Elevator Pitch</h3><p>CES 2024, Las Vegas</p></div></a>
 <a class="card video reveal" href="https://drive.google.com/file/d/1yUHNAZ-LAtA60nNqEzaoJWe7Zi3aX7Wo/view"><div class="thumb drive"><span class="play"></span><span class="lbl">VIDEO</span></div><div class="meta"><h3>Elevator speech — TokNox</h3><p>CES 2024, Las Vegas</p></div></a>
@@ -291,6 +304,14 @@ blockquote.q cite{display:block;margin-top:8px;font-family:Inter,sans-serif;font
 <a class="card video reveal" href="https://www.youtube.com/watch?v=qmr0n9pCNHA"><div class="thumb" style="background-image:url(https://i.ytimg.com/vi/qmr0n9pCNHA/hqdefault.jpg)"><span class="play"></span></div><div class="meta"><h3>Blockchain skills for professionals</h3><p>Interview with the Folks Finance team · CHAISE EU</p></div></a>
 <a class="card video reveal" href="https://drive.google.com/file/d/1cwZahS-9q5wT_WfFvTiMvMEJNISvD6st/view"><div class="thumb drive"><span class="play"></span><span class="lbl">VIDEO</span></div><div class="meta"><h3>Elevator speech</h3><p>Vodafone Mentorship Program</p></div></a>
 <a class="card video reveal" href="https://www.spreaker.com/episode/toknox-tokenizzazione-e-blockchain-per-processi-digitali-sicuri--60882496"><div class="thumb" style="background-image:url(https://d3wo5wojvuv7l.cloudfront.net/t_facebook_share/images.spreaker.com/original/6406d6c65541b13d4893738fce6c2b61.jpg)"><span class="play"></span></div><div class="meta"><h3>TokNox: tokenization and blockchain for secure digital processes</h3><p>Podcast · Alla corte delle Startup: Storie dal Pitch Castle</p></div></a>
+      </div>
+      <div style="margin-top:18px;text-align:center"><button class="btn" id="morevids" type="button">Show all videos</button></div>
+
+      <h4 class="reveal" style="font-size:.74rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:44px 0 16px">Shorts · Prediction markets explained</h4>
+      <div class="shorts">
+<a class="short reveal" href="https://www.youtube.com/shorts/1x7a2Dvoxu0"><div class="sthumb" style="background-image:url(https://i.ytimg.com/vi/1x7a2Dvoxu0/hqdefault.jpg)"><span class="play"></span></div><h3>Prediction markets: how they work</h3><p>Moneyviz</p></a>
+<a class="short reveal" href="https://www.youtube.com/shorts/xCGM7QfSq2I"><div class="sthumb" style="background-image:url(https://i.ytimg.com/vi/xCGM7QfSq2I/hqdefault.jpg)"><span class="play"></span></div><h3>Shares from 1 to 99 cents: the mechanics of predictions</h3><p>Moneyviz</p></a>
+<a class="short reveal" href="https://www.youtube.com/shorts/4y7YZ4Cw_Uo"><div class="sthumb" style="background-image:url(https://i.ytimg.com/vi/4y7YZ4Cw_Uo/hqdefault.jpg)"><span class="play"></span></div><h3>From sport to geopolitics: what you can bet on</h3><p>Moneyviz</p></a>
       </div>
 
       <div style="margin-top:48px" class="about">
@@ -336,6 +357,7 @@ blockquote.q cite{display:block;margin-top:8px;font-family:Inter,sans-serif;font
         <a class="row" href="https://igamingbusiness.com/uncategorized/gibraltar-hosts-first-european-summit-on-prediction-markets/"><span class="src"><b>iGaming Business</b>Nov 2026</span><h3>Gibraltar hosts first European summit on prediction markets</h3><span class="tag">Featured</span></a>
         <a class="row" href="https://www.agimeg.it/prediction-market-sigma-world-roma-regolamentazione/"><span class="src"><b>AGIMEG</b>Nov 2026</span><h3>Prediction market: il confronto a SiGMA World Roma</h3><span class="tag">Featured</span></a>
         <a class="row" href="https://blockchainitalia.io/blockchain-italia-at-ces-2024-introducing-toknox-the-tokenization-platform/"><span class="src"><b>Blockchain Italia</b>Jan 2024</span><h3>Blockchain Italia at CES 2024: introducing TokNox, the tokenization platform</h3><span class="tag">Featured</span></a>
+        <a class="row" href="https://www.thehubofbrands.com/blockchain-revolucion-en-el-marketing-y-valor-anadido-potencial-de-la-distribucion-de-tokens/"><span class="src"><b>The Hub of Brands</b>Nov 2023 · ES</span><h3>Blockchain y marketing: la revolución de los tokens</h3><span class="tag by">By me</span></a>
         <a class="row" href="https://iq.wiki/wiki/alessandro-brigato"><span class="src"><b>IQ.wiki</b>Profile</span><h3>Alessandro Brigato — People in crypto</h3><span class="tag">Profile</span></a>
         <a class="row" href="https://www.ilmessaggero.it/mondo/bitcoin_guerra_russia_ucraina_blockchain_cos_e_come_funziona-8475783.html"><span class="src"><b>Il Messaggero</b>2022</span><h3>Bitcoin, the Russia–Ukraine war and blockchain: what it is and how it works</h3><span class="tag int">Interview</span></a>
         <a class="row" href="https://affidaty.io/blog/en/2022/09/defi-decentralized-finance/"><span class="src"><b>Affidaty Blog</b>Sep 2022</span><h3>Decentralized Finance (DeFi)</h3><span class="tag by">By me</span></a>
@@ -367,6 +389,8 @@ blockquote.q cite{display:block;margin-top:8px;font-family:Inter,sans-serif;font
 
 <script>
 document.getElementById('y').textContent=new Date().getFullYear();
+var vids=document.getElementById('vids'),mv=document.getElementById('morevids');
+if(vids&&mv){var n=vids.children.length;if(n>6){vids.classList.add('collapsed');mv.textContent='Show all '+n+' videos';mv.onclick=function(){var c=vids.classList.toggle('collapsed');mv.textContent=c?'Show all '+n+' videos':'Show fewer';}}else{mv.parentNode.remove()}}
 var bar=document.getElementById('bar');
 addEventListener('scroll',function(){bar.classList.toggle('scrolled',scrollY>8)},{passive:true});
 if('IntersectionObserver' in window){
