@@ -171,6 +171,14 @@ footer nav a:hover{color:var(--fg)}
 .prose p{max-width:66ch;font-size:1.05rem}
 .prose p+p{margin-top:16px}
 .btn.icon{padding:9px 11px}
+.feature{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;align-items:center;margin-bottom:40px;padding:22px}
+@media (max-width:820px){.feature{grid-template-columns:1fr}}
+.feature .pics{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.feature .pics img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px}
+.feature .badge{display:inline-block;font-size:.74rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent2)}
+.feature h3{font-family:Fraunces,Georgia,serif;font-size:clamp(1.3rem,3vw,1.7rem);font-weight:600;line-height:1.2;margin-top:8px;letter-spacing:-.01em}
+.feature p{color:var(--muted);margin-top:10px;font-size:.98rem}
+.feature .cta{margin-top:18px}
 </style>
 </head>
 <body>
@@ -250,6 +258,15 @@ footer nav a:hover{color:var(--fg)}
   <section id="talks">
     <div class="wrap">
       <div class="sh reveal"><div><span class="k">Watch</span><h2>Talks &amp; videos</h2></div></div>
+      <div class="card feature reveal">
+        <div class="pics"><img src="sigma-1.jpg" alt="Alessandro Brigato speaking on the prediction markets panel at SiGMA World Rome 2026" loading="lazy"><img src="sigma-2.jpg" alt="Prediction markets panel at SiGMA World Rome 2026" loading="lazy"></div>
+        <div>
+          <span class="badge">Featured · SiGMA World Rome 2026</span>
+          <h3>When betting meets trading: prediction markets and regulatory chaos</h3>
+          <p>Panel with Francesca Broggi (Logico) and Fiorentina D'Amore (Blockchain.com), moderated by Nicola Tani (Agipronews). I argued that prediction markets are information tools — and a real opportunity for licensed operators, provided they get ad-hoc regulation.</p>
+          <div class="cta"><a class="btn primary" href="https://www.youtube.com/watch?v=R4RiCjTcXXs&amp;t=1486s"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.2 3.6z"/></svg>Watch the panel</a><a class="btn" href="https://www.agimeg.it/prediction-market-sigma-world-roma-regolamentazione/">Read on AGIMEG</a></div>
+        </div>
+      </div>
       <div class="videos">
 <a class="card video reveal" href="https://www.youtube.com/watch?v=R4RiCjTcXXs&amp;t=1486s"><div class="thumb" style="background-image:url(https://i.ytimg.com/vi/R4RiCjTcXXs/hqdefault.jpg)"><span class="play"></span></div><div class="meta"><h3>Prediction markets panel</h3><p>SiGMA World Rome 2026</p></div></a>
 <a class="card video reveal" href="https://www.youtube.com/watch?v=YYg24vGc9XA"><div class="thumb" style="background-image:url(https://i.ytimg.com/vi/YYg24vGc9XA/hqdefault.jpg)"><span class="play"></span></div><div class="meta"><h3>TokNox — Algorand Ecosystem Showcase</h3><p>Decipher 2024</p></div></a>
