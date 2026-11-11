@@ -69,7 +69,9 @@
   "https://t.me/alebrigato",
   "https://www.youtube.com/c/AlessandroBrigato21",
   "https://github.com/Bridge0x",
-  "https://iq.wiki/wiki/alessandro-brigato"
+  "https://iq.wiki/wiki/alessandro-brigato",
+  "https://usethebitcoin.com/crypto-personalities/all-you-need-to-know-about-alessandro-brigato-the-ceo-of-toknox/",
+  "https://en.wemakefuture.it/r/67a128e3d4222bc62747185c/"
  ]
 }
 </script>
@@ -267,18 +269,16 @@ blockquote.q{margin-top:26px;padding:18px 22px;border-left:3px solid var(--accen
 blockquote.q cite{display:block;margin-top:8px;font-family:Inter,sans-serif;font-style:normal;font-size:.82rem;color:var(--muted)}
 
 /* profiles / wiki */
-.wiki{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-@media (max-width:720px){.wiki{grid-template-columns:1fr}}
-.wiki .grp{padding:0;overflow:hidden}
-.wiki .grp h3{font-size:.74rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding:16px 20px 10px}
-.prof{display:grid;grid-template-columns:36px 1fr auto;gap:14px;align-items:center;padding:13px 20px;border-top:1px solid var(--line);transition:background .15s}
-a.prof:hover{background:var(--bg2)}
-.prof .ic{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:var(--glow);color:var(--accent)}
-.prof .ic svg{width:17px;height:17px;fill:currentColor}
-.prof b{display:block;font-weight:600;font-size:.96rem;line-height:1.3}
-.prof span.h{font-size:.85rem;color:var(--muted);overflow-wrap:anywhere}
-.prof .go{color:var(--muted);transition:transform .2s,color .2s}
-a.prof:hover .go{transform:translate(2px,-2px);color:var(--accent)}
+.ptiles{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.ptile{position:relative;display:flex;align-items:center;gap:14px;padding:18px 20px;background:var(--card);border:1px solid var(--line);border-radius:16px;transition:border-color .2s,transform .2s,box-shadow .2s}
+.ptile:hover{border-color:color-mix(in srgb,var(--c) 55%,var(--line));transform:translateY(-2px);box-shadow:0 14px 30px -22px var(--c)}
+.ptile .ic{width:44px;height:44px;flex:none;border-radius:12px;display:grid;place-items:center;color:var(--c);background:color-mix(in srgb,var(--c) 13%,transparent);transition:background .2s,color .2s}
+.ptile:hover .ic{background:var(--c);color:var(--bg)}
+.ptile .ic svg{width:20px;height:20px;fill:currentColor}
+.ptile b{font-weight:600;font-size:1rem;line-height:1.25}
+.ptile .go{position:absolute;top:12px;right:14px;font-size:.85rem;color:var(--muted);transition:transform .2s,color .2s}
+.ptile:hover .go{transform:translate(2px,-2px);color:var(--c)}
+@media (max-width:720px){.ptiles{gap:10px}.ptile{flex-direction:column;align-items:center;text-align:center;gap:10px;padding:18px 8px 16px}.ptile b{font-size:.88rem}.ptile .go{top:8px;right:10px}}
 </style>
 </head>
 <body>
@@ -414,7 +414,9 @@ a.prof:hover .go{transform:translate(2px,-2px);color:var(--accent)}
             <li class="reveal"><span class="d">2026 · We Make Future</span><h3><a href="https://en.wemakefuture.it/r/67a128e3d4222bc62747185c/">Prediction Markets as Digital Assets: the new frontier of capital efficiency</a></h3></li>
             <li class="reveal"><span class="d">November 2025 · University of Florence</span><h3><a href="https://www.babel.unifi.it/art-141-a-major-workshop-on-digital-asset-regulation.html">Tokenization: rules, projects and perspectives</a></h3><p>Round table on blockchain infrastructure in Italy, BABEL / DeTOKoDE workshop.</p></li>
             <li class="reveal"><span class="d">October 2024 · INATBA Digital Blockchain Week</span><h3><a href="https://inatba.org/events/tokenization-unlocked/">Tokenization Unlocked: compliance and real-world applications</a></h3></li>
+            <li class="reveal"><span class="d">June 2024 · We Make Future</span><h3><a href="https://en.wemakefuture.it/i/662f9c5c3aaeeed57299b1d8/">Tokenization: how the blockchain can improve your business</a></h3></li>
             <li class="reveal"><span class="d">2024 · Decipher</span><h3><a href="https://www.youtube.com/watch?v=YYg24vGc9XA">Introducing TokNox to the Algorand ecosystem</a></h3></li>
+            <li class="reveal"><span class="d">April 2024 · X Space with Algorand Foundation</span><h3><a href="https://alphagrowth.io/spaces/toknox-dont-trust-tokenize">TokNox: Don’t Trust, Tokenize</a></h3><p>Live audio session on TokNox, the European Blockchain Sandbox and CES.</p></li>
             <li class="reveal"><span class="d">January 2024 · CES Las Vegas</span><h3><a href="https://www.youtube.com/watch?v=5rpkBNG--wk">Launching TokNox at CES 2024</a></h3></li>
             <li class="reveal"><span class="d">2023 · ETH Milan</span><h3><a href="https://www.youtube.com/watch?v=TlJ3UnduAbw">Panel: Real World Assets</a></h3><p>Tokenized treasuries and equities, infrastructure and compliance across jurisdictions.</p></li>
             <li class="reveal"><span class="d">November 2022 · Roma Tre University</span><h3><a href="https://www.youtube.com/watch?v=i8Gz1h73FJE">NFT: perspectives and applications in Web3</a></h3><p>Building on Algorand, with the Algorand Foundation.</p></li>
@@ -448,6 +450,7 @@ a.prof:hover .go{transform:translate(2px,-2px);color:var(--accent)}
         <a class="row" href="https://sigma.world/news/blockchain-igaming-security-innovation/"><span class="src"><b>SiGMA World</b>Magazine</span><h3>From gaming to innovation: why the iGaming industry must embrace blockchain</h3><span class="tag int">Interview</span></a>
         <a class="row" href="https://igamingbusiness.com/uncategorized/gibraltar-hosts-first-european-summit-on-prediction-markets/"><span class="src"><b>iGaming Business</b>Nov 2026</span><h3>Gibraltar hosts first European summit on prediction markets</h3><span class="tag">Featured</span></a>
         <a class="row" href="https://www.agimeg.it/prediction-market-sigma-world-roma-regolamentazione/"><span class="src"><b>AGIMEG</b>Nov 2026</span><h3>Prediction market: il confronto a SiGMA World Roma</h3><span class="tag">Featured</span></a>
+        <a class="row" href="https://ntplusdiritto.ilsole24ore.com/art/tech-innovation-toknox-lancia-app-proprietaria-web-summit-2024-AGAwlP4"><span class="src"><b>Il Sole 24 Ore</b>Nov 2024 · NT+ Diritto</span><h3>Tech innovation: TokNox launches its own app at Web Summit 2024</h3><span class="tag int">Quoted</span></a>
         <a class="row" href="https://blockchainitalia.io/blockchain-italia-at-ces-2024-introducing-toknox-the-tokenization-platform/"><span class="src"><b>Blockchain Italia</b>Jan 2024</span><h3>Blockchain Italia at CES 2024: introducing TokNox, the tokenization platform</h3><span class="tag">Featured</span></a>
         <a class="row" href="https://www.thehubofbrands.com/blockchain-revolucion-en-el-marketing-y-valor-anadido-potencial-de-la-distribucion-de-tokens/"><span class="src"><b>The Hub of Brands</b>Nov 2023 · ES</span><h3>Blockchain y marketing: la revolución de los tokens</h3><span class="tag by">By me</span></a>
         <a class="row" href="https://www.ilmessaggero.it/mondo/bitcoin_guerra_russia_ucraina_blockchain_cos_e_come_funziona-8475783.html"><span class="src"><b>Il Messaggero</b>2022</span><h3>Bitcoin, the Russia–Ukraine war and blockchain: what it is and how it works</h3><span class="tag int">Interview</span></a>
@@ -472,22 +475,17 @@ a.prof:hover .go{transform:translate(2px,-2px);color:var(--accent)}
 
   <section id="profiles">
     <div class="wrap">
-      <div class="sh reveal"><div><span class="k">Directory</span><h2>Profiles &amp; links</h2></div><p>Where to find me online</p></div>
-      <div class="wiki">
-        <div class="card grp reveal">
-          <h3>Social</h3>
-          <a class="prof" href="https://www.linkedin.com/in/alebrigato/" rel="me noopener" target="_blank"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4V21H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1V21h-4v-4.9c0-1.17-.02-2.68-1.63-2.68-1.64 0-1.89 1.28-1.89 2.6V21h-4z"/></svg></span><span><b>LinkedIn</b><span class="h">linkedin.com/in/alebrigato</span></span><span class="go">↗</span></a>
-          <a class="prof" href="https://x.com/Bridge984" rel="me noopener" target="_blank"><span class="ic"><svg viewBox="0 0 24 24"><path d="M17.75 3h3.07l-6.7 7.66L22 21h-6.17l-4.83-6.32L5.47 21H2.4l7.17-8.2L2 3h6.33l4.37 5.77zm-1.08 16.17h1.7L7.4 4.74H5.58z"/></svg></span><span><b>X</b><span class="h">@Bridge984</span></span><span class="go">↗</span></a>
-          <a class="prof" href="https://t.me/alebrigato" rel="me noopener" target="_blank"><span class="ic"><svg viewBox="0 0 24 24"><path d="M21.9 4.3 18.7 19.4c-.2 1-.9 1.3-1.7.8l-4.8-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.9 8.9-8c.4-.3-.1-.5-.6-.2L6.5 13.2 1.8 11.7c-1-.3-1-1 .2-1.5L20.6 3c.9-.3 1.6.2 1.3 1.3z"/></svg></span><span><b>Telegram</b><span class="h">@alebrigato</span></span><span class="go">↗</span></a>
-          <a class="prof" href="https://www.instagram.com/alebrigato_" rel="me noopener" target="_blank"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85C2.38 3.92 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 2.7.27.27 2.69.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.2-4.35-2.62-6.78-6.98-6.98C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg></span><span><b>Instagram</b><span class="h">@alebrigato_</span></span><span class="go">↗</span></a>
-        </div>
-        <div class="card grp reveal">
-          <h3>Video &amp; code</h3>
-          <a class="prof" href="https://www.youtube.com/c/AlessandroBrigato21" rel="me noopener" target="_blank"><span class="ic"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.2 3.6z"/></svg></span><span><b>YouTube</b><span class="h">AlessandroBrigato21</span></span><span class="go">↗</span></a>
-          <a class="prof" href="https://github.com/Bridge0x" rel="me noopener" target="_blank"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.56 9.56 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg></span><span><b>GitHub</b><span class="h">github.com/Bridge0x</span></span><span class="go">↗</span></a>
-          <h3 style="border-top:1px solid var(--line)">Wiki &amp; directories</h3>
-          <a class="prof" href="https://iq.wiki/wiki/alessandro-brigato" rel="me noopener" target="_blank"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 4h4v16H4zM10 4h2.2l3.3 10.2L18.8 4H21l-4.6 16h-1.8z"/></svg></span><span><b>IQ.wiki</b><span class="h">People in crypto</span></span><span class="go">↗</span></a>
-        </div>
+      <div class="sh reveal"><div><span class="k">Directory</span><h2>Profiles &amp; links</h2></div></div>
+      <div class="ptiles">
+        <a class="ptile reveal" href="https://www.linkedin.com/in/alebrigato/" rel="me noopener" target="_blank" style="--c:#2f80d8"><span class="go">↗</span><span class="ic"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4V21H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1V21h-4v-4.9c0-1.17-.02-2.68-1.63-2.68-1.64 0-1.89 1.28-1.89 2.6V21h-4z"/></svg></span><b>LinkedIn</b></a>
+        <a class="ptile reveal" href="https://x.com/Bridge984" rel="me noopener" target="_blank" style="--c:var(--fg)"><span class="go">↗</span><span class="ic"><svg viewBox="0 0 24 24"><path d="M17.75 3h3.07l-6.7 7.66L22 21h-6.17l-4.83-6.32L5.47 21H2.4l7.17-8.2L2 3h6.33l4.37 5.77zm-1.08 16.17h1.7L7.4 4.74H5.58z"/></svg></span><b>X</b></a>
+        <a class="ptile reveal" href="https://t.me/alebrigato" rel="me noopener" target="_blank" style="--c:#229ed9"><span class="go">↗</span><span class="ic"><svg viewBox="0 0 24 24"><path d="M21.9 4.3 18.7 19.4c-.2 1-.9 1.3-1.7.8l-4.8-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.9 8.9-8c.4-.3-.1-.5-.6-.2L6.5 13.2 1.8 11.7c-1-.3-1-1 .2-1.5L20.6 3c.9-.3 1.6.2 1.3 1.3z"/></svg></span><b>Telegram</b></a>
+        <a class="ptile reveal" href="https://www.instagram.com/alebrigato_" rel="me noopener" target="_blank" style="--c:#e1306c"><span class="go">↗</span><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85C2.38 3.92 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 2.7.27.27 2.69.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.2-4.35-2.62-6.78-6.98-6.98C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg></span><b>Instagram</b></a>
+        <a class="ptile reveal" href="https://www.youtube.com/c/AlessandroBrigato21" rel="me noopener" target="_blank" style="--c:#ff0033"><span class="go">↗</span><span class="ic"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.2 3.6z"/></svg></span><b>YouTube</b></a>
+        <a class="ptile reveal" href="https://github.com/Bridge0x" rel="me noopener" target="_blank" style="--c:var(--fg)"><span class="go">↗</span><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.56 9.56 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg></span><b>GitHub</b></a>
+        <a class="ptile reveal" href="https://iq.wiki/wiki/alessandro-brigato" rel="me noopener" target="_blank" style="--c:#ff1a88"><span class="go">↗</span><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 4h4v16H4zM10 4h2.2l3.3 10.2L18.8 4H21l-4.6 16h-1.8z"/></svg></span><b>IQ.wiki</b></a>
+        <a class="ptile reveal" href="https://usethebitcoin.com/crypto-personalities/all-you-need-to-know-about-alessandro-brigato-the-ceo-of-toknox/" rel="me noopener" target="_blank" style="--c:#f7931a"><span class="go">↗</span><span class="ic"><svg viewBox="0 0 24 24"><path d="M14.2 11.6c1.2-.5 1.9-1.4 1.8-2.8-.2-1.9-1.8-2.5-3.8-2.7V3.6h-1.5v2.4h-1.2V3.6H8V6H5.6v1.6h1.1c.6 0 .8.3.8.7v7.4c0 .3-.2.6-.6.6H5.8L5.5 18H8v2.5h1.5V18h1.2v2.5h1.5V18c2.6-.2 4.4-.8 4.6-3.2.2-1.9-.7-2.8-2.6-3.2zM9.5 7.7c.9 0 3.9-.3 3.9 1.7s-3 1.7-3.9 1.7zm0 8.6v-3.7c1.1 0 4.6-.3 4.6 1.9s-3.5 1.8-4.6 1.8z"/></svg></span><b>UseTheBitcoin</b></a>
+        <a class="ptile reveal" href="https://en.wemakefuture.it/r/67a128e3d4222bc62747185c/" rel="me noopener" target="_blank" style="--c:var(--accent)"><span class="go">↗</span><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 14a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V21h2v-3.08A7 7 0 0 0 19 11z"/></svg></span><b>We Make Future</b></a>
       </div>
     </div>
   </section>
