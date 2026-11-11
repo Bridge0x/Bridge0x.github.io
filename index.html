@@ -179,6 +179,14 @@ footer nav a:hover{color:var(--fg)}
 .feature h3{font-family:Fraunces,Georgia,serif;font-size:clamp(1.3rem,3vw,1.7rem);font-weight:600;line-height:1.2;margin-top:8px;letter-spacing:-.01em}
 .feature p{color:var(--muted);margin-top:10px;font-size:.98rem}
 .feature .cta{margin-top:18px}
+.mag{display:grid;grid-template-columns:180px 1fr;gap:28px;align-items:center;padding:22px;margin-bottom:18px}
+.mag img{width:100%;border-radius:10px;box-shadow:0 18px 40px -22px rgba(0,0,0,.6)}
+@media (max-width:620px){.mag{grid-template-columns:110px 1fr;gap:18px}}
+.mag h3{font-family:Fraunces,Georgia,serif;font-size:clamp(1.25rem,3vw,1.6rem);font-weight:600;line-height:1.2;margin-top:8px}
+.mag p{color:var(--muted);margin-top:8px;font-size:.96rem}
+.mag .cta{margin-top:16px}
+blockquote.q{margin-top:26px;padding:18px 22px;border-left:3px solid var(--accent);background:var(--card);border-radius:0 12px 12px 0;font-family:Fraunces,Georgia,serif;font-size:1.15rem;line-height:1.45}
+blockquote.q cite{display:block;margin-top:8px;font-family:Inter,sans-serif;font-style:normal;font-size:.82rem;color:var(--muted)}
 </style>
 </head>
 <body>
@@ -237,6 +245,7 @@ footer nav a:hover{color:var(--fg)}
           <p>I then moved into sports business — marketing projects for Serie A TIM and the Rome launch of Car2Go — and spent the following years in digital marketing and communications across health, sport and corporate companies.</p>
           <p>In 2021 I became CMO of Folks Finance, a DeFi protocol on Algorand, and followed the project for over a year. Since 2022 I've coordinated the main projects of Blockchain Italia and run the conference side of Blockchain Forum Italia. In December 2023 I became CEO of TokNox, and in 2025 I joined Varla Protocol.</p>
           <p>I regularly speak at conferences and universities on marketing, tokenization, DeFi and prediction markets.</p>
+          <blockquote class="q">“Innovation is rarely a technology problem. It’s a translation problem – between what the technology can do and what an organisation is actually able to adopt.”<cite>— AIBC Magazine, Rome 2026</cite></blockquote>
         </div>
         <div class="side reveal">
           <div><h4>Focus</h4><ul class="chips"><li>DeFi</li><li>Prediction markets</li><li>Tokenization &amp; RWA</li><li>eIDAS 2.0</li><li>Digital Product Passport</li><li>Go-to-market</li></ul></div>
@@ -277,6 +286,7 @@ footer nav a:hover{color:var(--fg)}
 <a class="card video reveal" href="https://www.youtube.com/watch?v=i8Gz1h73FJE"><div class="thumb" style="background-image:url(https://i.ytimg.com/vi/i8Gz1h73FJE/hqdefault.jpg)"><span class="play"></span></div><div class="meta"><h3>Building applications on Algorand</h3><p>Speech · Roma Tre University</p></div></a>
 <a class="card video reveal" href="https://www.youtube.com/watch?v=qmr0n9pCNHA"><div class="thumb" style="background-image:url(https://i.ytimg.com/vi/qmr0n9pCNHA/hqdefault.jpg)"><span class="play"></span></div><div class="meta"><h3>Blockchain skills for professionals</h3><p>Interview with the Folks Finance team · CHAISE EU</p></div></a>
 <a class="card video reveal" href="https://drive.google.com/file/d/1cwZahS-9q5wT_WfFvTiMvMEJNISvD6st/view"><div class="thumb drive"><span class="play"></span><span class="lbl">VIDEO</span></div><div class="meta"><h3>Elevator speech</h3><p>Vodafone Mentorship Program</p></div></a>
+<a class="card video reveal" href="https://www.spreaker.com/episode/toknox-tokenizzazione-e-blockchain-per-processi-digitali-sicuri--60882496"><div class="thumb" style="background-image:url(https://d3wo5wojvuv7l.cloudfront.net/t_facebook_share/images.spreaker.com/original/6406d6c65541b13d4893738fce6c2b61.jpg)"><span class="play"></span></div><div class="meta"><h3>TokNox: tokenization and blockchain for secure digital processes</h3><p>Podcast · Alla corte delle Startup: Storie dal Pitch Castle</p></div></a>
       </div>
 
       <div style="margin-top:48px" class="about">
@@ -306,6 +316,15 @@ footer nav a:hover{color:var(--fg)}
   <section id="press">
     <div class="wrap">
       <div class="sh reveal"><div><span class="k">Read</span><h2>Press &amp; writing</h2></div></div>
+      <div class="card mag reveal">
+        <a href="aibc-rome-2026-interview.pdf"><img src="aibc-cover.jpg" alt="AIBC Rome 2026 magazine interview cover" loading="lazy"></a>
+        <div>
+          <span class="badge" style="font-size:.74rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent2)">Interview · AIBC Magazine, Rome 2026</span>
+          <h3>From blockchain to infrastructure</h3>
+          <p>An exclusive interview with Matthew Busuttil on the evolution of blockchain, tokenization that actually works, regulation as an enabler, and why Rome is becoming a meeting point for Web3 and iGaming.</p>
+          <div class="cta"><a class="btn primary" href="aibc-rome-2026-interview.pdf">Read the interview (PDF)</a></div>
+        </div>
+      </div>
       <div class="list reveal">
         <a class="row" href="https://aibc.world/news/prediction-markets-brigato-blockchain-unlocks-idle-capital/"><span class="src"><b>AIBC</b>2026</span><h3>Prediction markets, Brigato: blockchain unlocks idle capital</h3><span class="tag int">Interview</span></a>
         <a class="row" href="https://sigma.world/news/blockchain-igaming-security-innovation/"><span class="src"><b>SiGMA World</b>Magazine</span><h3>From gaming to innovation: why the iGaming industry must embrace blockchain</h3><span class="tag int">Interview</span></a>
