@@ -279,6 +279,11 @@ blockquote.q cite{display:block;margin-top:8px;font-family:Inter,sans-serif;font
 .ptile .go{position:absolute;top:12px;right:14px;font-size:.85rem;color:var(--muted);transition:transform .2s,color .2s}
 .ptile:hover .go{transform:translate(2px,-2px);color:var(--c)}
 @media (max-width:720px){.ptiles{gap:10px}.ptile{flex-direction:column;align-items:center;text-align:center;gap:10px;padding:18px 8px 16px}.ptile b{font-size:.88rem}.ptile .go{top:8px;right:10px}}
+.call-box{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.calendly-inline-widget{min-width:280px;height:700px}
+.call-alt{margin-top:14px;font-size:.9rem;color:var(--muted)}
+.call-alt a{color:var(--accent);font-weight:500}
+@media (max-width:640px){.calendly-inline-widget{height:1020px}}
 </style>
 </head>
 <body>
@@ -286,7 +291,7 @@ blockquote.q cite{display:block;margin-top:8px;font-family:Inter,sans-serif;font
 <header class="bar" id="bar">
   <div class="wrap">
     <a class="mono" href="#top">Alessandro Brigato<i>.</i></a>
-    <nav><a href="#now">Now</a><a href="#about">About</a><a href="#talks">Talks</a><a href="#press">Press</a><a href="#education">Education</a><a href="#profiles">Profiles</a><a href="https://t.me/alebrigato">Contact</a></nav>
+    <nav><a href="#now">Now</a><a href="#about">About</a><a href="#talks">Talks</a><a href="#press">Press</a><a href="#education">Education</a><a href="#profiles">Profiles</a><a href="#call">Book a call</a><a href="https://t.me/alebrigato">Contact</a></nav>
   </div>
 </header>
 
@@ -299,7 +304,8 @@ blockquote.q cite{display:block;margin-top:8px;font-family:Inter,sans-serif;font
       <p class="lead">CEO of <b>TokNox</b>, the blockchain tokenization platform for managing, storing and digitally signing documents. CMO of <b>Varla Protocol</b>, DeFi lending for prediction markets, and General Manager of <b>Blockchain Italia</b>, the leading Web3 software house in Italy.</p>
       <p class="lead2">Passionate about innovation, marketing and technology, former CMO of Folks Finance, and a regular speaker and panelist on blockchain, tokenization and prediction markets — from CES Las Vegas to SiGMA World.</p>
       <div class="cta">
-        <a class="btn primary" href="https://t.me/alebrigato"><svg viewBox="0 0 24 24"><path d="M21.9 4.3 18.7 19.4c-.2 1-.9 1.3-1.7.8l-4.8-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.9 8.9-8c.4-.3-.1-.5-.6-.2L6.5 13.2 1.8 11.7c-1-.3-1-1 .2-1.5L20.6 3c.9-.3 1.6.2 1.3 1.3z"/></svg>Get in touch</a>
+        <a class="btn primary" href="#call"><svg viewBox="0 0 24 24"><path d="M7 2h2v2h6V2h2v2h3a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h3zm12 8H5v9h14zM7 12h3v3H7z"/></svg>Book a call</a>
+        <a class="btn" href="https://t.me/alebrigato"><svg viewBox="0 0 24 24"><path d="M21.9 4.3 18.7 19.4c-.2 1-.9 1.3-1.7.8l-4.8-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.9 8.9-8c.4-.3-.1-.5-.6-.2L6.5 13.2 1.8 11.7c-1-.3-1-1 .2-1.5L20.6 3c.9-.3 1.6.2 1.3 1.3z"/></svg>Get in touch</a>
         <a class="btn icon" href="https://www.linkedin.com/in/alebrigato/" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4V21H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1V21h-4v-4.9c0-1.17-.02-2.68-1.63-2.68-1.64 0-1.89 1.28-1.89 2.6V21h-4z"/></svg></a>
         <a class="btn icon" href="https://x.com/Bridge984" aria-label="X" title="X"><svg viewBox="0 0 24 24"><path d="M17.75 3h3.07l-6.7 7.66L22 21h-6.17l-4.83-6.32L5.47 21H2.4l7.17-8.2L2 3h6.33l4.37 5.77zm-1.08 16.17h1.7L7.4 4.74H5.58z"/></svg></a>
         <a class="btn icon" href="https://www.instagram.com/alebrigato_" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85C2.38 3.92 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 2.7.27.27 2.69.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.2-4.35-2.62-6.78-6.98-6.98C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg></a>
@@ -489,6 +495,13 @@ blockquote.q cite{display:block;margin-top:8px;font-family:Inter,sans-serif;font
       </div>
     </div>
   </section>
+  <section id="call">
+    <div class="wrap">
+      <div class="sh reveal"><div><span class="k">Let's talk</span><h2>Book a call</h2></div><p>30 minutes · video call</p></div>
+      <div class="call-box reveal"><div class="calendly-inline-widget" id="calendly" data-url="https://calendly.com/alessandrobrigato-blockchainitalia/30min"></div></div>
+      <p class="call-alt">Calendar not loading? <a href="https://calendly.com/alessandrobrigato-blockchainitalia/30min" target="_blank" rel="noopener">Open it on Calendly ↗</a></p>
+    </div>
+  </section>
 </main>
 
 <footer>
@@ -508,6 +521,15 @@ if('IntersectionObserver' in window){
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
   document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
 }else{document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in')})}
+(function(){
+  var el=document.getElementById('calendly');if(!el)return;
+  var dark=matchMedia('(prefers-color-scheme: dark)').matches;
+  var url=el.getAttribute('data-url')+'?hide_gdpr_banner=1'+(dark?'&background_color=16181e&text_color=ecebf0&primary_color=a993ff':'&background_color=ffffff&text_color=15161a&primary_color=5b45e0');
+  el.setAttribute('data-url',url);
+  var loaded=false;function load(){if(loaded)return;loaded=true;var sc=document.createElement('script');sc.src='https://assets.calendly.com/assets/external/widget.js';sc.async=true;document.body.appendChild(sc);}
+  if('IntersectionObserver' in window){var o=new IntersectionObserver(function(es){if(es[0].isIntersecting){load();o.disconnect()}},{rootMargin:'600px 0px'});o.observe(el)}else{load()}
+  document.querySelectorAll('a[href="#call"]').forEach(function(a){a.addEventListener('click',load)});
+})();
 </script>
 </body>
 </html>
