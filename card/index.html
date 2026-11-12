@@ -14,13 +14,14 @@
 <meta property="og:image" content="https://alessandrobrigato.com/photo.jpg">
 <meta name="twitter:card" content="summary">
 <meta name="theme-color" content="#0e0f13">
+<script>(function(){var t='dark';try{t=localStorage.getItem('theme')||'dark'}catch(e){}document.documentElement.setAttribute('data-theme',t)})();</script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e0f13'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='30' text-anchor='middle' fill='%23a993ff'%3EAB%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f7f6f2;--fg:#15161a;--muted:#64656c;--line:#e0ddd4;--card:#fff;--accent:#5b45e0;--accent2:#0fa3a3;--glow:rgba(91,69,224,.14)}
-@media (prefers-color-scheme:dark){:root{--bg:#0e0f13;--fg:#ecebf0;--muted:#9a9ba5;--line:#24262e;--card:#16181e;--accent:#a993ff;--accent2:#4fd1c5;--glow:rgba(169,147,255,.16)}}
+:root{--bg:#0e0f13;--fg:#ecebf0;--muted:#9a9ba5;--line:#24262e;--card:#16181e;--accent:#a993ff;--accent2:#4fd1c5;--glow:rgba(169,147,255,.16);color-scheme:dark}
+:root[data-theme="light"]{--bg:#f7f6f2;--fg:#15161a;--muted:#64656c;--line:#e0ddd4;--card:#fff;--accent:#5b45e0;--accent2:#0fa3a3;--glow:rgba(91,69,224,.14);color-scheme:light}
 *{box-sizing:border-box;margin:0;padding:0}
 body{min-height:100vh;display:grid;place-items:center;padding:24px 16px;background:var(--bg);color:var(--fg);font:400 16px/1.5 Inter,system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
